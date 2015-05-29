@@ -1,5 +1,5 @@
 <?php
-include "conecta_mysql.php";
+include "includes/conecta_mysql.php";
 
  $id = $_POST ["id"];
  $nome = $_POST ["nome"];

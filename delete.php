@@ -1,5 +1,5 @@
 <?php
-include "conecta_mysql.php";
+include "includes/conecta_mysql.php";
 
 // Prepara o comando a ser executado
 $id = $_GET["id"];

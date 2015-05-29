@@ -1,5 +1,5 @@
 <?php
-include "conecta_mysql.php";
+include "includes/conecta_mysql.php";
  $nome = $_POST ["nome"];
  $fone = $_POST ["fone"];
  $email = $_POST ["email"];
