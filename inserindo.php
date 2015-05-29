@@ -5,7 +5,24 @@ include "includes/conecta_mysql.php";
  $email = $_POST ["email"];
  $mensagem= $_POST ["mensagem"];
 
-/*$sql = "SELECT * FROM form WHERE nome = '$nome'";
+
+
+ /*Seleciona um item por email*/
+$prepara = $pdo->prepare("SELECT id FROM form WHERE email='$email' LIMIT 1");
+$prepara->execute();
+
+/* rowCount() Conta quantos itens foram retornados*/
+$numero_de_emails = $prepara->rowCount();
+
+if($numero_de_emails > 0)
+{
+    echo 'Este email já existe';
+    exit;
+}
+
+
+
+/*$sql = "SELECT nome FROM form WHERE nome = '$nome'";
 $resultado = executa($sql);
 
 $total_registros = pg_num_rows($resultado);
