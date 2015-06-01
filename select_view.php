@@ -4,7 +4,7 @@
 <head>
     <title>--Formulário Contato--</title>
     <meta charset="utf-8" />
-    <link href="style.css" rel="stylesheet" media="all" />
+    <link href="css/style.css" rel="stylesheet" media="all" />
 </head>
 <body>
 
@@ -13,12 +13,12 @@
 
 <table>
     <thead>
-        <th>ID</th>
-        <th>Nome</th>
-        <th>Telefone</th>
-        <th>Email</th>
-        <th>Observação</th>
-        <th>Ações</th>
+        <th> ID  </th>
+        <th> Nome </th>
+        <th> Telefone </th>
+        <th> Email </th>
+        <th> Observação </th>
+        <th> Ações </th>
     </thead>
 
     <?php foreach($resultados as $linha): ?>
